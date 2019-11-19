@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./style.css">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <form id="message-form">
+        <div class="col-sm-10">
+          <input id="user-message" type="text" placeholder="Enter your message" />
+        </div>
+        <div class=" col-sm-2">
+          <input class="btn btn-primary" type="submit" value="send" />
+        </div>
+      </form>
+      <ul id="messages"></ul>
+    </div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="./index.js"></script>

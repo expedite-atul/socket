@@ -8,12 +8,11 @@ const expressServer = app.listen(3000, () => console.log('server running on 3000
 // const adminNamespace = io.of('/admin');
 const io = socketio(expressServer, {
   path: '/socket.io',
-  serveClient: false,
+  serveClient: true,
   // below are engine.IO options
   pingInterval: 10000,
   pingTimeout: 5000,
   cookie: false
-  // serveClient: true,
 });
 io.on('connection', (socket) => {
   socket.emit('messageFromServer', { data: 'welcome to socketIO server' });

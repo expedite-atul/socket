@@ -1,0 +1,23 @@
+{
+  "name": "flackapp",
+  "version": "1.0.0",
+  "description": "basic clone of slack app",
+  "main": "flack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon flack.js"
+  },
+  "keywords": [
+    "flack",
+    "socket",
+    "namespaces",
+    "room",
+    "chatApp"
+  ],
+  "author": "expedite-atul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
